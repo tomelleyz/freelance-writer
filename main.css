@@ -1,0 +1,184 @@
+
+html {
+  scroll-behavior: smooth;
+}
+* {
+  box-sizing: border-box !important;
+}
+nav ul li a.active-page {
+  background-color: rgba(0, 0, 0, 0.1);
+  border: 2px solid white;
+}
+nav ul li a {
+  font-weight: 600;
+  margin: 12px 6px;
+  border: 2px solid transparent;
+  transition: 0.5s;
+}
+nav ul li a:hover {
+  border: 2px solid white;
+}
+header {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("images/male-hands-typing-on-a-laptop.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+}
+.about-mobile {
+  margin: 50px 0;
+  padding: 20px 5%;
+}
+.about-mobile p {
+  font-size: 17px;
+}
+.about-medium-up {
+  margin: 70px 0;
+  padding-right: 5%;
+}
+.about-medium-up p {
+  font-size: 17px;
+}
+.articles {
+  padding: 70px 0;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("images/a-fountain-pen.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.articles p {
+  font-size: 16px;
+}
+.go-to-blog-btn:active {
+  background-color: #424242 !important;
+  border: 2px solid #424242 !important;
+}
+.go-to-blog-btn:hover {
+  background-color: #424242;
+  border: 2px solid #424242 !important;
+}
+.btn-flat:active, .btn-flat:hover {
+  background-color: #424242 !important;
+}
+.waves-effect .waves-grey .waves-ripple {
+  background-color: rgba(158, 158, 158, 0.65);
+}
+footer {
+  background-color: #212121;
+  color: white;
+  padding-top: 70px;
+}
+footer h5 {
+  margin-bottom: 1.2rem !important;
+}
+footer a {
+  color: silver;
+}
+footer a:hover {
+  color: grey;
+}
+.input-prepend {
+  padding: 10px;
+  border-radius: 5px 0 0 5px;
+  text-align: center;
+  background-color: silver;
+  color: #212121;
+  font-size: 15px;
+  margin-right: -1px;
+}
+.subscribe input[type="email"] {
+  padding: 11px;
+  outline-color: silver;
+  font-size: 15px;
+  margin-left: 0.35px;
+  background-color: #fafafa;
+  border: none;
+}
+.subscribe input[type="submit"] {
+  margin-left: -3.75px;
+  padding: 10px;
+  border: 1px solid silver;
+  border-left: none;
+  outline: none;
+  border-radius: 0 5px 5px 0;
+  background-color: silver;
+  color: #212121;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.subscribe input[type="submit"]:hover {
+  background-color: #616161;
+  color: white;
+  border: 1px solid #616161;
+  border-left: none;
+}
+
+
+@media screen and (max-width: 385px) {
+  .subscribe input[type="email"] {
+    width: 150px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .about-mobile {
+    display: block;
+  }
+  .about-medium-up {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 749px) {
+  .subscribe input[type="email"] {
+    width: 150px;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 992px) {
+  .about-mobile {
+    display: none;
+  }
+  .about-medium-up {
+    display: block;
+  }
+  .articles .container {
+    width: 90%;
+  }
+  footer .container {
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 993px) {
+  .about-mobile {
+    display: none;
+  }
+  .about-medium-up {
+    display: block;
+  }
+  .about-medium-up p {
+    font-size: 20px;
+  }
+  .articles .container {
+    width: 80%;
+  }
+  footer .container {
+    width: 90%;
+  }
+  nav {
+    padding: 0 20px;
+  }
+  nav .brand-logo {
+    margin-top: 10px;
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  footer .container {
+    width: 80%;
+  }
+}
